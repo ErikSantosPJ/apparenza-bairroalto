@@ -231,5 +231,13 @@ footer .legal{font-size:12px;opacity:.9;margin-top:14px}
 
 <a class="flutuante cta-whatsapp" data-cta="whatsapp" data-pos="flutuante" href="https://wa.me/5541985353102?text=Ol%C3%A1%2C%20vim%20do%20Google%20e%20gostaria%20de%20um%20or%C3%A7amento%20da%20minha%20receita." target="_blank" rel="noopener" style="color:#fff"><svg><use href="#wa"/></svg><span class="sr">WhatsApp</span></a>
 <div class="barra"><a class="btn-wa cta-whatsapp" data-cta="whatsapp" data-pos="barra" href="https://wa.me/5541985353102?text=Ol%C3%A1%2C%20vim%20do%20Google%20e%20gostaria%20de%20um%20or%C3%A7amento%20da%20minha%20receita." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Enviar receita no WhatsApp</a></div>
+<script>
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest('.cta-whatsapp');
+    if (a && typeof gtag === 'function') {
+      gtag('event', 'conversion', {'send_to': 'AW-18487907621/C0vzCPG0o7cdEKWq3O9E'});
+    }
+  });
+</script>
 </body>
 </html>
